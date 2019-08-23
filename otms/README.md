@@ -88,13 +88,12 @@ $
 
 ## Security Vulnerability Report
 
-Sonarqube Security Vulnerability analysis is successfully run for this project, with zero security vulnerabilities. Please see the report (here)[SonarqubeReport.jpg]
+Sonarqube Security Vulnerability analysis is successfully run for this project, with zero security vulnerabilities. Please see the report [here](SonarqubeReport.jpg)
 
 ## Performance test Report
 
-_kube-fledged_ provides APIs to perform CRUD operations on image cache.  These APIs can be consumed via kubectl or curl
+To be updated
 
 ## Code Profiling Report
 
-_kube-fledged_ provides APIs to perform CRUD operations on image cache.  These APIs can be consumed via kubectl or curl
-
+To be updated
