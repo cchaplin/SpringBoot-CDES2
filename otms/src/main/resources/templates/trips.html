@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org">
+<body>
+
+  <h2>Trip Details</h2>
+
+  <table id="trips" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Trip ID</th>
+        <th>Employee ID</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Distance</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="trip : ${trips.getTripList()}">
+        <td th:text="${trip.tripId}"></td>
+        <td th:text="${trip.empId}"></td>
+        <td th:text="${trip.startTime}"></td>
+        <td th:text="${trip.endTime}"></td>
+        <td th:text="${trip.distance}"></td>
+        <td th:text="${trip.cost}"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
