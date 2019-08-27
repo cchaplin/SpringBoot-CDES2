@@ -1,4 +1,4 @@
-package otms.controller;
+package com.s2.otms.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,9 +7,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.sql.Timestamp;
+import java.util.Collections;
+
 import org.springframework.security.core.context.SecurityContextHolder;
-import otms.repository.TripRepository;
-import otms.model.Trip;
+import com.s2.otms.repository.TripRepository;
+import com.s2.otms.model.Trip;
 
 
 @RestController    // This means that this class is a Rest Controller
@@ -37,15 +39,17 @@ public class TripRestController {
 		return "Trip Saved Successfully!";
     }
     
-	@GetMapping(path="/trips") // Map ONLY GET Requests
-	public @ResponseBody Iterable<Trip> getAllTrips() {
-		String currentUserName = SecurityContextHolder.getContext().getAuthentication().getName();
+	@GetMapping(path="/trips", produces={"application/json"}) // Map ONLY GET Requests
+	public @ResponseBody Iterable<Trip> getAllTrips(@RequestParam(value = "user", defaultValue = "anonymousUser") String user) {
+		if ("anonymousUser".equals(user)) {
+			return Collections.emptyList();
+		}
 		// if admin user, return all the trip records
-		if("admin".equalsIgnoreCase(currentUserName)) {
+		if("admin".equalsIgnoreCase(user)) {
 			return tripRepository.findAll();
 		}
 		// if an ordinary user, return only the trip records of the logged in employee
-		int empId=Integer.parseInt(currentUserName);  
+		int empId=Integer.parseInt(user);  
 		return tripRepository.findByEmpId(empId);
 	}
 }

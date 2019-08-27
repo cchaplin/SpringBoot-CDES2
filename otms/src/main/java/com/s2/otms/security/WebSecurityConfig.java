@@ -1,4 +1,4 @@
-package otms.security;
+package com.s2.otms.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,7 +31,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
             .authorizeRequests()
-            //.antMatchers("/", "/home").permitAll()
+            .antMatchers("/css/*","/images/*","/trips").permitAll()
             .anyRequest().authenticated()
             .and()
             .formLogin()

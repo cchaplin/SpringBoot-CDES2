@@ -1,10 +1,10 @@
-package otms.repository;
+package com.s2.otms.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.jpa.repository.Query;
 import java.util.Collection;
 
-import otms.model.Trip;
+import com.s2.otms.model.Trip;
 
 // This will be AUTO IMPLEMENTED by Spring into a Bean called tripRepository
 // CRUD refers Create, Read, Update, Delete

@@ -1,4 +1,4 @@
-package otms.security;
+package com.s2.otms.security;
 
 import org.springframework.security.core.userdetails.User.UserBuilder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import otms.model.User;
+import com.s2.otms.model.User;
 
 public class UserDetailsServiceImp implements UserDetailsService {
   @Override

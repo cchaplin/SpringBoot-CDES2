@@ -1,4 +1,4 @@
-package otms.model;
+package com.s2.otms.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -6,9 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.sql.Timestamp;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity // This tells Hibernate to make a table out of this class
 @Table(name="trip")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Trip {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -23,6 +25,10 @@ public class Trip {
 	private Integer distance;
 
 	private Float cost;
+
+	public Trip() {
+		
+	}
 
 	public Integer getTripId() {
 		return tripId;

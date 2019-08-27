@@ -1,4 +1,4 @@
-package otms.model;
+package com.s2.otms.model;
 
 public class User {
   private String username;

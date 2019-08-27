@@ -1,4 +1,4 @@
-package otms;
+package com.s2.otms;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

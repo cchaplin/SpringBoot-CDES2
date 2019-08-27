@@ -1,0 +1,27 @@
+
+.login{
+	background: url("../images/travel.jpg") fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+.desc{
+	background: url("../images/bg1.jpg") fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	width: 100% !important;
+	height: 100% !important;
+}
