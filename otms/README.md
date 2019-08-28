@@ -15,7 +15,10 @@ The module ‘Summary of Trip Details’ is implemented using Spring Boot by con
 
 ## Micro Services Architecture
 
-OTMS has been designed as a cloud native application based on Micro Services Architecture using Domain Driven Design (DDD). The MSA architecture diagram can be found [here](msa.jpg).
+OTMS has been designed as a cloud native application based on Micro Services Architecture using Domain Driven Design (DDD).
+
+- The MSA architecture diagram can be found [here](otms_msa.jpg).
+- The design diagram for "Trip Details" microservice can be found [here](trip_details_design.jpg).
 
 ## Prerequisites
 
@@ -92,8 +95,9 @@ Sonarqube Security Vulnerability analysis is successfully run for this project, 
 
 ## Performance test Report
 
-To be updated
+OTMS application "/trip.html" endpoint was subjected to load testing using Apache Bench tool (ab). Please see the report [here](load_test_report.md)
 
 ## Code Profiling Report
 
-To be updated
+_kube-fledged_ provides APIs to perform CRUD operations on image cache.  These APIs can be consumed via kubectl or curl
+
