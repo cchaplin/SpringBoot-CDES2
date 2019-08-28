@@ -99,5 +99,7 @@ OTMS application "/trip.html" endpoint was subjected to load testing using Apach
 
 ## Code Profiling Report
 
-_kube-fledged_ provides APIs to perform CRUD operations on image cache.  These APIs can be consumed via kubectl or curl
+Java code profiling is run for this project using VisualVM tool. Please see the report [here](VisualVM_Report.docx)
+
+
 
