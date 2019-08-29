@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import java.sql.Timestamp;
 import java.util.Collections;
-
-import org.springframework.security.core.context.SecurityContextHolder;
 import com.s2.otms.repository.TripRepository;
 import com.s2.otms.model.Trip;
 

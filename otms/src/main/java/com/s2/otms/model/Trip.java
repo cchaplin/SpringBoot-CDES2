@@ -26,10 +26,6 @@ public class Trip {
 
 	private Float cost;
 
-	public Trip() {
-		
-	}
-
 	public Integer getTripId() {
 		return tripId;
 	}
