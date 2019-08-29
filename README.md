@@ -26,7 +26,30 @@ OTMS has been designed as a cloud native application based on Micro Services Arc
 - MySQL server and client installed. MySQL server service running successfully.
 - JDK 11, Apache Maven 3.6.0, Web Browser installed in the VM.
 
-## Build
+## Build and Run the Eureka Service Registry
+
+Clone the Git repository
+
+```
+$ git clone https://code.cognizant.com/681222/681222_CDES2_Project_16082019.git $HOME/
+$ cd $HOME/681222_CDES2_Project_16082019/eureka-service
+```
+
+Build the project to generate the jar file
+
+```
+$ mvn clean && ./mvnw clean package
+```
+
+Above command will generate the jar file in location: $HOME/681222_CDES2_Project_16082019/eureka-service/target/eureka-0.0.1-SNAPSHOT.jar
+
+Run the Eureka service registry using the following command:
+
+```
+java -Dserver.port=8761 -jar $HOME/681222_CDES2_Project_16082019/eureka-service/target/eureka-0.0.1-SNAPSHOT.jar
+```
+
+## Build OTMS
 
 Clone the Git repository
 
@@ -42,7 +65,7 @@ $ mvn clean && ./mvnw clean package
 ```
 Above command will generate the jar file in location: $HOME/681222_CDES2_Project_16082019/otms/target/otms-0.0.1-SNAPSHOT.jar
 
-## Run
+## Run OTMS
 
 Log into MySQL server as root. Create a MySQL database named "db_otms". Create a user called "springuser" and note down the password. Also grant all priveleges to "springuser" only for database "db_otms".
 
