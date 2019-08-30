@@ -77,7 +77,7 @@ mysql> grant all on db_otms.* to 'springuser'@'%';
 mysql> exit
 ```
 
-OTMS uses Spring JPA to automatically initialize the database when the application is started. This initialization is driven by schema.sql and data.sql files included in the application. No manual action is required. Now, it's time to run the application. This will start the application on port 8080.
+OTMS uses Spring JPA to automatically initialize the database when the application is started. This initialization is driven by schema.sql and data.sql files included in the application. No manual action is required. Now, it's time to run the application. This will start the application on port 8443.
 
 ```
 java -jar $HOME/681222_CDES2_Project_16082019/otms/target/otms-0.0.1-SNAPSHOT.jar
