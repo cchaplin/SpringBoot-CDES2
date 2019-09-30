@@ -1,4 +1,4 @@
-# Online Travel Management System (CDE S2 Certification)
+# Online Travel Management System
 
 **OTMS** is a cloud native web application developed using Spring Boot and Micro Services Architecture. A leading travel company maintains the online application “Online Travel Management System”.
 This system manages the below functionalities:-
